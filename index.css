@@ -1,15 +1,38 @@
 .background{
-    position: fixed;
+     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index:1;
-    gap:80px;
+    height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    gap: 60px;
+
+    padding: 20px;          
+    box-sizing: border-box; 
+    flex-wrap: wrap;       
+    overflow: hidden; 
 }
+
+.message-box {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.accordion-body {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.background img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+}
+
 #imageJo{
     width: 220px;
     height: 350px;
@@ -110,6 +133,26 @@ a{
     .click-text {
         font-size: 16px;
     }
+    @media (max-width: 768px) {
+    .background {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .message-box {
+        width: 105%;
+    }
+
+    .accordion-body {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    button h1 {
+        font-size: 18px;
+    }
+}
 }
 
 .message-box {
